@@ -60,7 +60,7 @@ func _physics_process(delta):
 			velocity = Vector2.UP * jump_power 
 			jump_released = false
 
-	velocity = move_and_slide(velocity, Vector2(1,-1)) 
+	velocity = move_and_slide(velocity, Vector2(0,-1)) 
 	
 	if is_on_floor(): on_floor = true
 	else: on_floor = false
